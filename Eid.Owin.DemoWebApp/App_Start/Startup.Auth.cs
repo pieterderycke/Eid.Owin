@@ -65,7 +65,10 @@ namespace Eid.Owin.DemoWebApp
             //    ClientSecret = ""
             //});
 
-            app.UseEidAuthentication();
+            app.UseEidAuthentication(new EidAuthenticationOptions() 
+            {
+                SignInAsAuthenticationType = "Cookies"
+            });
         }
     }
 }

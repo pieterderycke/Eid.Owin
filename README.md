@@ -1,5 +1,5 @@
 # eID OWIN Middleware
-This library provides an OWIN Middleware for authenticating users based on the Belgium eID identity cards.
+This library provides an OWIN Middleware for authenticating users based on the Belgium eID identity cards. Based on the data that can be read from the client certificate, it will create a ClaimsIdentity for use in your web applications.
 
 ## Prerequisites
 Users need to have the eID middleware installed. The latest version can be found at: http://eid.belgium.be/en/using_your_eid/installing_the_eid_software/
@@ -28,7 +28,10 @@ public void ConfigureAuth(IAppBuilder app)
 {
 	// ...
 	
-	app.UseEidAuthentication();
+	app.UseEidAuthentication(new EidAuthenticationOptions() 
+	{
+		SignInAsAuthenticationType = "Cookies"
+	});
 }	
 ```
 
