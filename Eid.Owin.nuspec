@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Eid.Owin</id>
+    <version>$version$</version>
+    <title>Eid.Owin</title>
+    <authors>Pieter De Rycke</authors>
+    <licenseUrl>https://github.com/pieterderycke/Eid.Owin/blob/master/LICENSE.md</licenseUrl>
+    <projectUrl>https://github.com/pieterderycke/Eid.Owin</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>
+		This library provides an OWIN Middleware for authenticating users based on the Belgium eID identity cards. Based on the data that can be read from the client certificate, it will create a ClaimsIdentity for use in your web applications.
+	</description>
+	<summary>
+		This library provides an OWIN Middleware for authenticating users based on the Belgium eID identity cards. Based on the data that can be read from the client certificate, it will create a ClaimsIdentity for use in your web applications.
+	</summary>
+	<tags>eid BeID Belgium Owin</tags>
+  </metadata>
+</package>
